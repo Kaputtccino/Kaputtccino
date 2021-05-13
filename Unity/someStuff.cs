@@ -1,6 +1,6 @@
 using UnityEngine;
 
-//unnecessary to inerhit form monoBehaviour
+//unnecessary to inherit form monoBehaviour
 
 //check colliding with some kind of layer
 
