@@ -26,6 +26,6 @@ using UnityEngine;
 
         if (hit.collider != null && hit.collider.gameObject.tag == "Player")
         {
-            Debug.Log("HAB DICH");
+            Debug.Log("got you");
         }
     }
