@@ -16,3 +16,16 @@ using UnityEngine;
             return false;
         }
     }
+
+//enemy line of sight
+    public void PlayerInSight(GameObject own, GameObject target)
+    {
+        RaycastHit2D hit = Physics2D.Linecast(own.transform.position, Vector2.MoveTowards(own.transform.position, target.transform.position, 5f));
+
+        Debug.DrawLine(own.transform.position, Vector2.MoveTowards(own.transform.position, target.transform.position, 5f), Color.blue);
+
+        if (hit.collider != null && hit.collider.gameObject.tag == "Player")
+        {
+            Debug.Log("HAB DICH");
+        }
+    }
