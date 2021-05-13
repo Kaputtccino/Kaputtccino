@@ -15,6 +15,9 @@ using UnityEngine;
         {
             return false;
         }
+    
+    //or shorthand
+    var result = _col.IsTouchingLayers(layer) ? true : false;
     }
 
 //enemy line of sight
